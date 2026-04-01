@@ -21,6 +21,8 @@ boxes.forEach((box, index) => {
       const color2 = getRandomColor();
 
       box.style.background = `linear-gradient(45deg, ${color1}, ${color2})`;
+      document.body.style.background = `linear-gradient(45deg, ${color1}, ${color2}, ${getRandomColor()})`
+      document.body.style.backgroundSize = "400% 400%"
     }
 
   });
